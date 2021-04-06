@@ -42,8 +42,11 @@ body {
 }
 
 nav {
-  max-width: 1100px;
   margin: 0 auto;
+}
+
+nav {
+  max-width: 1100px;
 }
 
 h1,
@@ -119,11 +122,16 @@ h3 {
 .hero p {
   font-size: 24px;
   font-style: italic;
+  max-width: 1100px;
 }
 
 /* Sekce Vítejte*/
 .welcome {
   display: flex;
+  max-width: 1100px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 .button {
   background-color: #f195b2;
@@ -138,14 +146,23 @@ h3 {
 .button:hover {
   background-color: #d2567d;
 }
+
+.left,
+.right {
+  flex: 1 1 50%;
+}
 /*Sekce nabídka*/
 .nabidka {
   background-color: #f0f0f0;
+  padding: 80px 0;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .dorty {
   display: flex;
-  justify-content: space-evenly;
-  flex-basis: 1100px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .produkt {
@@ -154,6 +171,7 @@ h3 {
   background-color: white;
   display: flex;
   flex-direction: column;
+  flex: 1 1 25%;
 }
 
 .produkt img {
@@ -167,6 +185,10 @@ h3 {
 /*Náš přístup*/
 .pristup {
   display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 80px 0;
 }
 
 /* Patička*/
